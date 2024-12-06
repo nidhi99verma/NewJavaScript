@@ -32,6 +32,28 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+///////////stack(primitive) & heap (non primitive)
+
+let userOne = "Onish"
+let userTwo = userOne
+userTwo = "Nidhi"
+// console.log(userOne)
+// console.log(userTwo)
+
+let firstUser = {
+    email: "nidhi@gmail.com",
+    name : "Nidhi",
+    age: 30,
+    id: 12,
+    
+}
+let secondUser = firstUser
+secondUser.email = "nidhiverma@gmail.com"
+console.log(firstUser.email);
+console.log(secondUser.email);
+console.log(firstUser);
+console.log(secondUser);
